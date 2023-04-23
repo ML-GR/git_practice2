@@ -13,13 +13,36 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-       <h1>To-do list</h1>
-        <h2>How it works</h2>
-            <ul>
-                <li>Create a task</li>
-                <li>Check the box when it is done</li>
-                <li>Repeat</li>
-            </ul>
+        <section class="section-center">
+            <!-- form -->
+            <form class="grocery-form">
+                <p class="alert"></p>
+                <h3>Grocery bud</h3>
+                <div class=""form-control>
+                    <input type="text" id="grocery" placeholder="e.g. eggs">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+
+            </form>
+            <!-- list -->
+            <div class="grocery-container">
+                <div class="grocery-list">
+                    <artcile class="grocery-item">
+                        <p class="item">item</p>
+                        <div class="grocery-container">
+                            <button type="button" class="edit-btn">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button type="button" class="delete-btn">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </artcile>
+                </div>
+                <!-- button -->
+                <button type="button" class="clear-btn">clear items</button>
+            </div>
+        </section>
                 
         <script src="" async defer></script>
     </body>
